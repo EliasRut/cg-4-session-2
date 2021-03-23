@@ -1,0 +1,52 @@
+.content-container {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.teaser-image {
+	width: 100%;
+}
+
+.blog-content p {
+	background-color: #fafafa;
+	padding: 16px;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.text-part {
+	display: flex;
+	flex-direction: row;
+}
+
+article {
+	flex-basis: 800px;
+}
+
+aside {
+	flex-basis: 200px;
+	border: 1px solid #eee;
+	padding: 1em;
+	margin-left: 1em;
+	min-width: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+	.content-container {
+		width: calc(100% - 2em);
+		padding: 1em;
+	}
+
+	.text-part {
+		flex-wrap: wrap;
+	}
+}
